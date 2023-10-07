@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4735373723313656557}
   - component: {fileID: 2912590031970093779}
   m_Layer: 0
-  m_Name: Spin Reef 1C
+  m_Name: Spin Reef C1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
