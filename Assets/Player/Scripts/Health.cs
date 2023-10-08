@@ -9,6 +9,7 @@ public class Health: Pickup {
     public override void OnTriggerEnter(Collider other) {
         
         if(other.tag == "Player") {
+            Debug.Log("Collided");
             other.transform.GetComponent<PlayerAvatar>().health += health;
 
             if (other.transform.GetComponent<PlayerAvatar>().health > 100)
