@@ -32,9 +32,14 @@ public class Enemy : MonoBehaviour {
     public GameObject burning;
     public GameObject explosion;
 
+    private int layer;
+    private int layermask;
+
     // Use this for initialization
     void Start () {
         agent = GetComponent<NavMeshAgent>();
+        layer = 6;
+        layermask = 1 << layer;
     }
 
     // Update is called once per frame
