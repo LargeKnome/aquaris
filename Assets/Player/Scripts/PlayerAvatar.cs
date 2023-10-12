@@ -30,6 +30,8 @@ public class PlayerAvatar : MonoBehaviour {
     public GameObject muzzleFlash;
     public GameObject flameStream;
 
+    public int access = 0;
+
     // Use this for initialization
     void Start () {
         anim = avatar.GetComponent<Animator>();

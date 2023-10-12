@@ -10,20 +10,25 @@ public class Terminal : MonoBehaviour
 
     public UnityEvent onActivation;
     bool activated = false;
+
+    public int requiredLevel;
     
     GameObject player;
+    PlayerAccess playerAccess;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectsWithTag("Player")[0];
-            lockedMesh.SetActive(true);
-            unlockedMesh.SetActive(false);
+        playerAccess = player.GetComponent<PlayerAccess>();
+
+        lockedMesh.SetActive(true);
+        unlockedMesh.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("e") && Vector3.Distance(transform.position, player.transform.position) <= 2f && !activated) 
+        if (Input.GetKeyDown("e") && Vector3.Distance(transform.position, player.transform.position) <= 2f && !activated && playerAccess.access >= requiredLevel) 
         {
             onActivation.Invoke();
             activated = true;

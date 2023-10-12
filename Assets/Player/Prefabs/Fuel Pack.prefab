@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2374393349602910145}
   - component: {fileID: 2374393349602910174}
   - component: {fileID: 2374393349602910175}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fuel Pack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

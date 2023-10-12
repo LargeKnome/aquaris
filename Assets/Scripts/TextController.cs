@@ -11,6 +11,9 @@ public class TextController : MonoBehaviour
     }
     void OnBecameInvisible()
     {
-        gameObject.SetActive(false);
+        if (hasSeen)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
