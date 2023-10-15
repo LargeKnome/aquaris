@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 5124662655992260326, guid: 464a2a7b6fad1484ca17a976a9a6f6a6, type: 3}
   health: 10
-  agroRange: 10
+  agroRange: 8
   damage: 5
   rotationSpeed: 30
   targetRotation: {x: 0, y: 0, z: 0, w: 0}

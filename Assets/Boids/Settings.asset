@@ -26,4 +26,4 @@ MonoBehaviour:
     m_Bits: 8
   boundsRadius: 0.27
   avoidCollisionWeight: 10
-  collisionAvoidDst: 5
+  collisionAvoidDst: 3
