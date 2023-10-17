@@ -31,6 +31,7 @@ public class Terminal : MonoBehaviour
         if (Input.GetKeyDown("e") && Vector3.Distance(transform.position, player.transform.position) <= 2f && !activated && playerAccess.access >= requiredLevel) 
         {
             onActivation.Invoke();
+            playerAccess.access -= requiredLevel;
             activated = true;
             lockedMesh.SetActive(false);
             unlockedMesh.SetActive(true);
