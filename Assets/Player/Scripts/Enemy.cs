@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour {
 
             //Raycast in direction of Player
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, -(transform.position - player.transform.position).normalized, out hit, agroRange)) {
+            if (Physics.Raycast(transform.position, -(transform.position - player.transform.position).normalized, out hit, agroRange, layermask)) {
 
                 //If Raycast hits player
                 if (hit.transform.tag == "Player") {
