@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  damage: 5
+  damage: 10
   lifeTime: 1.5
   hitEffect: {fileID: 2561179782580251521, guid: 49e094634252904448af1577d42a9782,
     type: 3}
