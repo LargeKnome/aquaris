@@ -8,6 +8,10 @@ public class GameManager : MonoBehaviour {
     //Singleton Setup
     public static GameManager instance = null;
 
+    public int waitTime = 5;
+
+    public FadeInOut fadeToBlack;
+
     public bool playerDead = false;
 
     public bool levelComplete = false;
@@ -34,6 +38,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         thisLevel = SceneManager.GetActiveScene().name;
+        fadeToBlack.StartCoroutine(fadeToBlack.FadeBlack(false, waitTime));
 	}
 	
 	// Update is called once per frame
@@ -43,7 +48,9 @@ public class GameManager : MonoBehaviour {
 
     public IEnumerator LoadLevel(string level) {
 
-        yield return new WaitForSeconds(5);
+
+        fadeToBlack.StartCoroutine(fadeToBlack.FadeBlack(true, waitTime));
+        yield return new WaitForSeconds(waitTime+2);
 
         SceneManager.LoadScene(level);
     }

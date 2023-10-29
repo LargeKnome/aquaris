@@ -17,6 +17,7 @@ public class PlayerAvatar : MonoBehaviour {
 
     //Weapons
     public GameObject bullet;
+    public GameObject weakBullet;
     private float MGFireTime = 0.075f;
     private float MGFireTimer;
     public int ammo = 500;
@@ -50,13 +51,20 @@ public class PlayerAvatar : MonoBehaviour {
 
     void Shooting() {
         //Left Mouse Button
-        if (Input.GetMouseButton(0) && ammo >= 1) {
+        if (Input.GetMouseButton(0)) {
 
             muzzleFlash.SetActive(true);
 
             if (Time.time > MGFireTimer) {
-                Instantiate(bullet, muzzleFlash.transform.position, transform.rotation);
-                ammo -= 1;
+                if (ammo >= 1)
+                {
+                    Instantiate(bullet, muzzleFlash.transform.position, transform.rotation);
+                    ammo -= 1;
+                }
+                else 
+                {
+                    Instantiate(weakBullet, muzzleFlash.transform.position, transform.rotation);
+                }
                 MGFireTimer = Time.time + MGFireTime;
             }
 

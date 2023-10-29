@@ -3128,7 +3128,7 @@ Transform:
   m_GameObject: {fileID: 3148873694679754278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: -0.5}
+  m_LocalPosition: {x: -0.5, y: 0, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3266,23 +3266,23 @@ MonoBehaviour:
   - {x: 0, y: 2, z: 0.75}
   - {x: 1, y: 2, z: 0.75}
   - {x: 1, y: 0, z: 0.75}
-  - {x: 1, y: 0, z: 0}
+  - {x: 1, y: 0, z: -0.25}
   - {x: 1, y: 2, z: 0.75}
-  - {x: 1, y: 2, z: 0}
-  - {x: 1, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 2, z: 0}
-  - {x: 0, y: 2, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 1, y: 2, z: -0.25}
+  - {x: 1, y: 0, z: -0.25}
+  - {x: 0, y: 0, z: -0.25}
+  - {x: 1, y: 2, z: -0.25}
+  - {x: 0, y: 2, z: -0.25}
+  - {x: 0, y: 0, z: -0.25}
   - {x: 0, y: 0, z: 0.75}
-  - {x: 0, y: 2, z: 0}
+  - {x: 0, y: 2, z: -0.25}
   - {x: 0, y: 2, z: 0.75}
   - {x: 0, y: 2, z: 0.75}
   - {x: 1, y: 2, z: 0.75}
-  - {x: 0, y: 2, z: 0}
-  - {x: 1, y: 2, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
+  - {x: 0, y: 2, z: -0.25}
+  - {x: 1, y: 2, z: -0.25}
+  - {x: 0, y: 0, z: -0.25}
+  - {x: 1, y: 0, z: -0.25}
   - {x: 0, y: 0, z: 0.75}
   - {x: 1, y: 0, z: 0.75}
   m_Textures0:
@@ -3291,23 +3291,23 @@ MonoBehaviour:
   - {x: 0, y: 2}
   - {x: -1, y: 2}
   - {x: 0.75, y: 0}
-  - {x: 0, y: 0}
+  - {x: -0.25, y: 0}
   - {x: 0.75, y: 2}
-  - {x: 0, y: 2}
+  - {x: -0.25, y: 2}
   - {x: 1, y: 0}
   - {x: 0, y: 0}
   - {x: 1, y: 2}
   - {x: 0, y: 2}
-  - {x: 0, y: 0}
+  - {x: 0.25, y: 0}
   - {x: -0.75, y: 0}
-  - {x: 0, y: 2}
+  - {x: 0.25, y: 2}
   - {x: -0.75, y: 2}
   - {x: 0, y: 0.75}
   - {x: 1, y: 0.75}
-  - {x: 0, y: 0}
-  - {x: 1, y: 0}
-  - {x: 0, y: 0}
-  - {x: -1, y: 0}
+  - {x: 0, y: -0.25}
+  - {x: 1, y: -0.25}
+  - {x: 0, y: -0.25}
+  - {x: -1, y: -0.25}
   - {x: 0, y: 0.75}
   - {x: -1, y: 0.75}
   m_Textures2: []
@@ -3346,11 +3346,19 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 871
+  m_VersionIndex: 917
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: 02000000
+  m_SelectedEdges:
+  - a: 8
+    b: 9
+  - a: 10
+    b: 8
+  - a: 9
+    b: 11
+  - a: 11
+    b: 10
+  m_SelectedVertices: 08000000090000000a0000000b000000
 --- !u!114 &8438568338346104341
 MonoBehaviour:
   m_ObjectHideFlags: 0
